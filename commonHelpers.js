@@ -6,5 +6,5 @@ import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                
       alt="${t}"
     />
   </a>
-</li>`}).join("");o.innerHTML=c;new e(".gallery a",{captionDelay:250,captionPosition:"bottom",captionsData:"alt",overlayOpacity:1});o.classList.add("container");
+</li>`}).join("");o.innerHTML=c;new e(".gallery a",{captionDelay:250,captionPosition:"bottom",captionsData:"alt",overlayOpacity:1});o.classList.add("container-gallery");
 //# sourceMappingURL=commonHelpers.js.map
