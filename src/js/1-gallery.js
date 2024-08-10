@@ -96,4 +96,4 @@ new SimpleLightbox('.gallery a', {
 });
 
 // ============================== ДОДАВАННЯ КЛАСІВ
-listGallery.classList.add('container');
+listGallery.classList.add('container-gallery');
