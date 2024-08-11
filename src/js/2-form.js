@@ -11,7 +11,9 @@ function inputFromLocalStorage() {
     formData = JSON.parse(localStorage.getItem('feedback-form-state'));
 
     for (const key in formData) {
-      formFeedback.elements[key].value = formData[key];
+      if (formData.hasOwnProperty(key)) {
+        formFeedback.elements[key].value = formData[key];
+      }
     }
   }
   return;
