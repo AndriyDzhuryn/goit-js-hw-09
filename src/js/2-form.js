@@ -1,10 +1,22 @@
 'use strict';
 
-const formData = {
+let formData = {
   email: '',
   message: '',
 };
 const formFeedback = document.querySelector('.feedback-form');
+
+function inputFromLocalStorage() {
+  if (localStorage.getItem('feedback-form-state') !== null) {
+    formData = JSON.parse(localStorage.getItem('feedback-form-state'));
+
+    for (const key in formData) {
+      formFeedback.elements[key].value = formData[key];
+    }
+  }
+  return;
+}
+inputFromLocalStorage();
 
 formFeedback.addEventListener('input', onInputFeedback);
 formFeedback.addEventListener('submit', onSubmitFeedback);
